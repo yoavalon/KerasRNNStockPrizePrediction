@@ -13,7 +13,7 @@ epochs = 50
 delay = 50
 batches = 32
 
-df = pd.read_json("https://api.iextrading.com/1.0/stock/msft/chart/5y")  # apple course last 5 years via API
+df = pd.read_json("https://api.iextrading.com/1.0/stock/foxa/chart/5y")  # apple course last 5 years via API
 training_set = df[['open']].iloc[0:1000,].values.reshape(-1, 1)
 test_set = df[['open']].iloc[1000:1200,].values.reshape(-1, 1)
 
